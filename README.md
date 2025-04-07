@@ -1,5 +1,8 @@
 # Backend-MS-Base
 
+## Project Overview
+Backend-MS-Base is a foundational backend service built with Node.js and TypeScript. It provides a modular structure for managing features like user authentication, database interactions, and API routing.
+
 ## Prerequisites
 
 ### Install Node.js
@@ -17,17 +20,31 @@
    npm -v
    ```
 
-### Install TypeScript
+### Install TypeScript and Dependencies
 Run the following commands:
 ```
-npm install -g typescript
-npm install -g ts-node
-npm install -g nodemon
-npm i express body-parser cookie-parser compression cors
-npm i -g @types/express @types/body-parser @types/cookie-parser @types/compression @types/cors
+npm install -g typescript ts-node nodemon
+npm install express body-parser cookie-parser compression cors
+npm install -g @types/express @types/body-parser @types/cookie-parser @types/compression @types/cors
+npm install --save-dev @types/supertest jest ts-jest @types/jest
 ```
 
 ### Install PostgreSQL
 Run the following command:
 ```
 npm install pg @types/pg dotenv
+```
+
+## Folder Structure
+- `src/`: Contains the application source code.
+  - `features/users/`: Includes controllers, DTOs, middleware, routes, and services for user-related functionality.
+- `tests/`: Contains unit and integration tests.
+- `docs/`: Documentation files, including the [ER Diagram](docs/ER_Diagram3.md).
+
+## Usage
+Currently, the application does not have defined scripts for running the server or tests. Please update the `package.json` file with appropriate commands, such as:
+- Start the server: `"start": "node src/app.js"`
+- Run tests: `"test": "npx jest"`
+
+## Documentation
+Refer to the [ER Diagram](docs/ER_Diagram3.md) for the database schema.
