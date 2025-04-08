@@ -37,13 +37,13 @@ npm install pg @types/pg dotenv
 
 ## Folder Structure
 - `src/`: Contains the application source code.
-  - `features/users/`: Includes controllers, DTOs, middleware, routes, and services for user-related functionality.
+   - `features/users/`: Includes controllers, DTOs, middleware, routes, and services for user-related functionality.
 - `tests/`: Contains unit and integration tests.
 - `docs/`: Documentation files, including the [ER Diagram](docs/ER_Diagram3.md).
 
 ## Usage
 Currently, the application does not have defined scripts for running the server or tests. Please update the `package.json` file with appropriate commands, such as:
-- Start the server: `"start": "node src/app.js"`
+- Start the server: `"start": "npx ts-node src/app"`
 - Run tests: `"test": "npx jest"`
 
 ## Documentation
