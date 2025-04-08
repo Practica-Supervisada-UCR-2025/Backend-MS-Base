@@ -21,7 +21,11 @@ jobs:
       - name: Run tests
         run: npx jest --coverage
 
+      - name: Run tests
+        run: npx jest --coverage
+
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
-          token: ${{ secrets.CODECOV_TOKEN 
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Practica-Supervisada-UCR-2025/Backend-MS-Base
