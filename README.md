@@ -1,5 +1,7 @@
 # Backend-MS-Base
 
+[![codecov](https://codecov.io/gh/Practica-Supervisada-UCR-2025/Backend-MS-Base/graph/badge.svg?token=M29OG2XDU6)](https://codecov.io/gh/Practica-Supervisada-UCR-2025/Backend-MS-Base)
+
 ## Project Overview
 Backend-MS-Base is a foundational backend service built with Node.js and TypeScript. It provides a modular structure for managing features like user authentication, database interactions, and API routing.
 
@@ -7,6 +9,7 @@ Backend-MS-Base is a foundational backend service built with Node.js and TypeScr
 
 ### Install Node.js
 1. Download the MSI installer from [Node.js Downloads](https://nodejs.org/en/download/).
+
 2. Verify the installation by running the following command in the terminal:
    ```
    node -v
